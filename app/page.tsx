@@ -16,6 +16,9 @@ export default function HomePage() {
           </Link>
         </li>
         <li>
+          <a href="/ssg-csr" className="text-blue-400 hover:underline">CSR + SSG Hybrid</a> {/* ← вот он */}
+        </li>
+        <li>
           <Link href="/ssr" className="text-blue-400 hover:underline">
             Server Side Rendering (SSR)
           </Link>
