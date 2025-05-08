@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { useCat } from '@/hooks';
+import BackLink from "@/components/BackLink";
 
 export default function CSRPage() {
   const { catUrl, loading, fetchCat } = useCat();
@@ -14,9 +15,7 @@ export default function CSRPage() {
     <div className="relative min-h-screen bg-black text-white font-mono text-lg tracking-tight px-8 py-6 flex flex-col items-center gap-6">
       {/* Кнопка назад */}
       <div className="absolute top-6 left-6">
-        <a href="/" className="inline-flex items-center text-blue-400 hover:underline text-base">
-          ← Back to Overview
-        </a>
+        <BackLink />
       </div>
 
       {/* Заголовок */}
